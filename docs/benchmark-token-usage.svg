@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title description">
+  <title id="title">Browser MCP benchmark overview</title>
+  <desc id="description">Comparison of Haden, Playwright MCP, Chrome DevTools Slim, and Chrome DevTools Full. The charts show core AI context tokens, first useful article latency, and article origin transfer. Lower values are better.</desc>
+  <style>
+    .background { fill: #f8fafc; }
+    .title { fill: #0f172a; font: 700 30px system-ui, sans-serif; }
+    .subtitle { fill: #475569; font: 16px system-ui, sans-serif; }
+    .section { fill: #0f172a; font: 700 20px system-ui, sans-serif; }
+    .label { fill: #1e293b; font: 600 16px system-ui, sans-serif; }
+    .value { fill: #0f172a; font: 700 16px ui-monospace, SFMono-Regular, Consolas, monospace; }
+    .note { fill: #64748b; font: 14px system-ui, sans-serif; }
+    .track { fill: #e2e8f0; }
+    .haden { fill: #059669; }
+    .competitor { fill: #64748b; }
+    .slim { fill: #d97706; }
+    .pill { fill: #d1fae5; }
+    .pill-text { fill: #065f46; font: 700 11px system-ui, sans-serif; letter-spacing: .04em; }
+    .divider { stroke: #94a3b8; stroke-opacity: .35; }
+    @media (prefers-color-scheme: dark) {
+      .background { fill: #0f172a; }
+      .title, .section, .value { fill: #f8fafc; }
+      .subtitle, .note { fill: #94a3b8; }
+      .label { fill: #e2e8f0; }
+      .track { fill: #1e293b; }
+      .competitor { fill: #94a3b8; }
+      .pill { fill: #064e3b; }
+      .pill-text { fill: #a7f3d0; }
+    }
+  </style>
+
+  <rect class="background" width="1200" height="760" rx="20"/>
+  <text class="title" x="48" y="56">Browser MCP benchmark overview</text>
+  <text class="subtitle" x="48" y="86">Five-run medians on deterministic local pages · lower is better</text>
+
+  <text class="section" x="48" y="128">Core AI context tokens</text>
+  <text class="note" x="1014" y="128">PRIMARY METRIC</text>
+
+  <text class="label" x="48" y="172">Haden</text>
+  <rect class="track" x="225" y="151" width="750" height="28" rx="7"/>
+  <rect class="haden" x="225" y="151" width="505" height="28" rx="7"/>
+  <text class="value" x="995" y="172">7,822</text>
+  <rect class="pill" x="1070" y="151" width="106" height="28" rx="14"/>
+  <text class="pill-text" x="1082" y="169">BEST SEMANTIC</text>
+
+  <text class="label" x="48" y="217">Playwright MCP</text>
+  <rect class="track" x="225" y="196" width="750" height="28" rx="7"/>
+  <rect class="competitor" x="225" y="196" width="750" height="28" rx="7"/>
+  <text class="value" x="995" y="217">11,627</text>
+
+  <text class="label" x="48" y="262">Chrome Full</text>
+  <rect class="track" x="225" y="241" width="750" height="28" rx="7"/>
+  <rect class="competitor" x="225" y="241" width="748" height="28" rx="7"/>
+  <text class="value" x="995" y="262">11,596</text>
+
+  <text class="label" x="48" y="307">Chrome Slim</text>
+  <rect class="track" x="225" y="286" width="750" height="28" rx="7"/>
+  <rect class="slim" x="225" y="286" width="299" height="28" rx="7"/>
+  <text class="value" x="995" y="307">4,638</text>
+  <text class="note" x="48" y="340">Chrome Slim is a JavaScript-only baseline with no semantic refs or image-alt coverage in this test.</text>
+
+  <line class="divider" x1="48" y1="374" x2="1152" y2="374"/>
+
+  <text class="section" x="48" y="416">First useful article</text>
+  <text class="note" x="48" y="441">milliseconds</text>
+
+  <text class="label" x="48" y="481">Haden</text>
+  <rect class="track" x="185" y="462" width="300" height="25" rx="6"/>
+  <rect class="haden" x="185" y="462" width="100" height="25" rx="6"/>
+  <text class="value" x="500" y="481">1,044</text>
+
+  <text class="label" x="48" y="524">Playwright</text>
+  <rect class="track" x="185" y="505" width="300" height="25" rx="6"/>
+  <rect class="competitor" x="185" y="505" width="260" height="25" rx="6"/>
+  <text class="value" x="500" y="524">2,714</text>
+
+  <text class="label" x="48" y="567">Chrome Slim</text>
+  <rect class="track" x="185" y="548" width="300" height="25" rx="6"/>
+  <rect class="slim" x="185" y="548" width="288" height="25" rx="6"/>
+  <text class="value" x="500" y="567">3,005</text>
+
+  <text class="label" x="48" y="610">Chrome Full</text>
+  <rect class="track" x="185" y="591" width="300" height="25" rx="6"/>
+  <rect class="competitor" x="185" y="591" width="300" height="25" rx="6"/>
+  <text class="value" x="500" y="610">3,133</text>
+
+  <text class="section" x="630" y="416">Article origin transfer</text>
+  <text class="note" x="630" y="441">kilobytes</text>
+
+  <text class="label" x="630" y="481">Haden</text>
+  <rect class="track" x="765" y="462" width="300" height="25" rx="6"/>
+  <rect class="haden" x="765" y="462" width="53" height="25" rx="6"/>
+  <text class="value" x="1080" y="481">16.7</text>
+
+  <text class="label" x="630" y="524">Playwright</text>
+  <rect class="track" x="765" y="505" width="300" height="25" rx="6"/>
+  <rect class="competitor" x="765" y="505" width="300" height="25" rx="6"/>
+  <text class="value" x="1080" y="524">95.0</text>
+
+  <text class="label" x="630" y="567">Chrome Slim</text>
+  <rect class="track" x="765" y="548" width="300" height="25" rx="6"/>
+  <rect class="slim" x="765" y="548" width="300" height="25" rx="6"/>
+  <text class="value" x="1080" y="567">95.0</text>
+
+  <text class="label" x="630" y="610">Chrome Full</text>
+  <rect class="track" x="765" y="591" width="300" height="25" rx="6"/>
+  <rect class="competitor" x="765" y="591" width="300" height="25" rx="6"/>
+  <text class="value" x="1080" y="610">95.0</text>
+
+  <line class="divider" x1="48" y1="660" x2="1152" y2="660"/>
+  <text class="note" x="48" y="694">Token count: o200k_base · one schema load + article + form + visual workflows</text>
+  <text class="note" x="48" y="722">Image pixels and model reasoning/output excluded · full methodology follows below</text>
+</svg>

@@ -1,0 +1,58 @@
+{
+  "name": "haden-browser",
+  "version": "0.1.0",
+  "description": "A fast, AI-first web browser exposed through the Model Context Protocol.",
+  "homepage": "https://github.com/Haden-Min/haden-browser#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haden-Min/haden-browser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Haden-Min/haden-browser/issues"
+  },
+  "type": "module",
+  "bin": {
+    "haden-browser": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "benchmark": "npm run build && node benchmarks/run-benchmarks.mjs",
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "setup-browser": "playwright install chromium",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "npm run typecheck && npm test",
+    "prepublishOnly": "npm run check && npm run build"
+  },
+  "keywords": [
+    "ai",
+    "browser",
+    "mcp",
+    "model-context-protocol",
+    "playwright"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.0.0",
+    "playwright": "^1.62.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.0.0",
+    "@types/node": "^22.0.0",
+    "js-tiktoken": "^1.0.21",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  }
+}

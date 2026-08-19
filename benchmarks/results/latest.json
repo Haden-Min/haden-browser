@@ -1,0 +1,1878 @@
+{
+  "generatedAt": "2026-08-19T06:55:09.249Z",
+  "environment": {
+    "platform": "win32",
+    "architecture": "x64",
+    "node": "v22.22.2",
+    "browserExecutable": "C:\\Users\\hanyu\\AppData\\Local\\ms-playwright\\chromium-1234\\chrome-win64\\chrome.exe",
+    "viewport": "1280x800",
+    "repetitions": 5,
+    "execution": "sequential, fresh isolated process per repetition, warm npm package cache"
+  },
+  "methodology": {
+    "responseSize": "UTF-8 bytes of complete MCP CallToolResult JSON",
+    "toolSchemaSize": "UTF-8 bytes of complete tools/list tool array JSON",
+    "tokenCount": "Exact o200k_base token count over compact MCP JSON",
+    "workflowTokens": "MCP tool-call name and arguments plus complete CallToolResult; binary image data is excluded from text-token counts",
+    "coreSessionTokens": "One tool-schema load plus article, form, and visual workflow tokens; explicit image inspection is excluded",
+    "latency": "wall-clock milliseconds measured by the MCP client",
+    "imageComparison": "original image bytes for Haden; viewport screenshot bytes for general-purpose MCPs"
+  },
+  "products": [
+    {
+      "id": "haden",
+      "label": "haden-browser 0.1.0",
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\hanyu\\Documents\\ChatGPT\\ai-browser\\dist\\index.js"
+      ]
+    },
+    {
+      "id": "playwright",
+      "label": "Playwright MCP 0.0.78",
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "@playwright/mcp@0.0.78",
+        "--headless",
+        "--isolated",
+        "--viewport-size=1280x800",
+        "--executable-path=C:\\Users\\hanyu\\AppData\\Local\\ms-playwright\\chromium-1234\\chrome-win64\\chrome.exe"
+      ]
+    },
+    {
+      "id": "chrome-slim",
+      "label": "Chrome DevTools MCP 1.7.0 Slim",
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@1.7.0",
+        "--headless",
+        "--isolated",
+        "--slim",
+        "--viewport=1280x800",
+        "--executablePath=C:\\Users\\hanyu\\AppData\\Local\\ms-playwright\\chromium-1234\\chrome-win64\\chrome.exe",
+        "--no-usage-statistics",
+        "--no-performance-crux"
+      ]
+    },
+    {
+      "id": "chrome-devtools",
+      "label": "Chrome DevTools MCP 1.7.0",
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@1.7.0",
+        "--headless",
+        "--isolated",
+        "--viewport=1280x800",
+        "--executablePath=C:\\Users\\hanyu\\AppData\\Local\\ms-playwright\\chromium-1234\\chrome-win64\\chrome.exe",
+        "--no-usage-statistics",
+        "--no-performance-crux"
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "product": "haden",
+      "run": 1,
+      "connectMs": 743.11,
+      "firstArticleReadyMs": 1096.79,
+      "listToolsMs": 8.64,
+      "toolCount": 5,
+      "toolSchemaBytes": 2951,
+      "toolSchemaTokens": 727,
+      "coreSessionTokens": 7822,
+      "article": {
+        "calls": 1,
+        "ms": 353.68,
+        "responseBytes": 13786,
+        "finalResponseBytes": 13786,
+        "requestTokens": 35,
+        "responseTokens": 2697,
+        "totalTokens": 2732,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 15,
+        "imageAltCount": 8,
+        "network": {
+          "requests": 1,
+          "bytes": 16701
+        }
+      },
+      "form": {
+        "calls": 3,
+        "ms": 332.44,
+        "responseBytes": 1206,
+        "finalResponseBytes": 424,
+        "requestTokens": 74,
+        "responseTokens": 347,
+        "totalTokens": 421,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 1,
+        "ms": 44.2,
+        "responseBytes": 9431,
+        "finalResponseBytes": 9431,
+        "requestTokens": 36,
+        "responseTokens": 3906,
+        "totalTokens": 3942,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 55.59,
+        "responseBytes": 13647,
+        "finalResponseBytes": 13245,
+        "requestTokens": 43,
+        "responseTokens": 171,
+        "totalTokens": 214,
+        "imageBytes": 9780,
+        "success": true,
+        "delivery": "inline-image",
+        "contentTypes": [
+          "text",
+          "image"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        ""
+      ]
+    },
+    {
+      "product": "haden",
+      "run": 2,
+      "connectMs": 736.41,
+      "firstArticleReadyMs": 1130.76,
+      "listToolsMs": 9.95,
+      "toolCount": 5,
+      "toolSchemaBytes": 2951,
+      "toolSchemaTokens": 727,
+      "coreSessionTokens": 7822,
+      "article": {
+        "calls": 1,
+        "ms": 394.35,
+        "responseBytes": 13786,
+        "finalResponseBytes": 13786,
+        "requestTokens": 35,
+        "responseTokens": 2697,
+        "totalTokens": 2732,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 15,
+        "imageAltCount": 8,
+        "network": {
+          "requests": 1,
+          "bytes": 16701
+        }
+      },
+      "form": {
+        "calls": 3,
+        "ms": 335.68,
+        "responseBytes": 1206,
+        "finalResponseBytes": 424,
+        "requestTokens": 74,
+        "responseTokens": 347,
+        "totalTokens": 421,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 1,
+        "ms": 32.56,
+        "responseBytes": 9431,
+        "finalResponseBytes": 9431,
+        "requestTokens": 36,
+        "responseTokens": 3906,
+        "totalTokens": 3942,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 48.32,
+        "responseBytes": 13647,
+        "finalResponseBytes": 13245,
+        "requestTokens": 43,
+        "responseTokens": 171,
+        "totalTokens": 214,
+        "imageBytes": 9780,
+        "success": true,
+        "delivery": "inline-image",
+        "contentTypes": [
+          "text",
+          "image"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        ""
+      ]
+    },
+    {
+      "product": "haden",
+      "run": 3,
+      "connectMs": 714.43,
+      "firstArticleReadyMs": 1043.64,
+      "listToolsMs": 10.03,
+      "toolCount": 5,
+      "toolSchemaBytes": 2951,
+      "toolSchemaTokens": 727,
+      "coreSessionTokens": 7822,
+      "article": {
+        "calls": 1,
+        "ms": 329.21,
+        "responseBytes": 13786,
+        "finalResponseBytes": 13786,
+        "requestTokens": 35,
+        "responseTokens": 2697,
+        "totalTokens": 2732,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 15,
+        "imageAltCount": 8,
+        "network": {
+          "requests": 1,
+          "bytes": 16701
+        }
+      },
+      "form": {
+        "calls": 3,
+        "ms": 345,
+        "responseBytes": 1206,
+        "finalResponseBytes": 424,
+        "requestTokens": 74,
+        "responseTokens": 347,
+        "totalTokens": 421,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 1,
+        "ms": 27.66,
+        "responseBytes": 9431,
+        "finalResponseBytes": 9431,
+        "requestTokens": 36,
+        "responseTokens": 3906,
+        "totalTokens": 3942,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 52.91,
+        "responseBytes": 13647,
+        "finalResponseBytes": 13245,
+        "requestTokens": 43,
+        "responseTokens": 171,
+        "totalTokens": 214,
+        "imageBytes": 9780,
+        "success": true,
+        "delivery": "inline-image",
+        "contentTypes": [
+          "text",
+          "image"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        ""
+      ]
+    },
+    {
+      "product": "haden",
+      "run": 4,
+      "connectMs": 710.47,
+      "firstArticleReadyMs": 947.5,
+      "listToolsMs": 7.92,
+      "toolCount": 5,
+      "toolSchemaBytes": 2951,
+      "toolSchemaTokens": 727,
+      "coreSessionTokens": 7822,
+      "article": {
+        "calls": 1,
+        "ms": 237.03,
+        "responseBytes": 13786,
+        "finalResponseBytes": 13786,
+        "requestTokens": 35,
+        "responseTokens": 2697,
+        "totalTokens": 2732,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 15,
+        "imageAltCount": 8,
+        "network": {
+          "requests": 1,
+          "bytes": 16701
+        }
+      },
+      "form": {
+        "calls": 3,
+        "ms": 316.29,
+        "responseBytes": 1206,
+        "finalResponseBytes": 424,
+        "requestTokens": 74,
+        "responseTokens": 347,
+        "totalTokens": 421,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 1,
+        "ms": 34.03,
+        "responseBytes": 9431,
+        "finalResponseBytes": 9431,
+        "requestTokens": 36,
+        "responseTokens": 3906,
+        "totalTokens": 3942,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 49.74,
+        "responseBytes": 13647,
+        "finalResponseBytes": 13245,
+        "requestTokens": 43,
+        "responseTokens": 171,
+        "totalTokens": 214,
+        "imageBytes": 9780,
+        "success": true,
+        "delivery": "inline-image",
+        "contentTypes": [
+          "text",
+          "image"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        ""
+      ]
+    },
+    {
+      "product": "haden",
+      "run": 5,
+      "connectMs": 592.51,
+      "firstArticleReadyMs": 828.75,
+      "listToolsMs": 8.13,
+      "toolCount": 5,
+      "toolSchemaBytes": 2951,
+      "toolSchemaTokens": 727,
+      "coreSessionTokens": 7822,
+      "article": {
+        "calls": 1,
+        "ms": 236.24,
+        "responseBytes": 13786,
+        "finalResponseBytes": 13786,
+        "requestTokens": 35,
+        "responseTokens": 2697,
+        "totalTokens": 2732,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 15,
+        "imageAltCount": 8,
+        "network": {
+          "requests": 1,
+          "bytes": 16701
+        }
+      },
+      "form": {
+        "calls": 3,
+        "ms": 300.62,
+        "responseBytes": 1206,
+        "finalResponseBytes": 424,
+        "requestTokens": 74,
+        "responseTokens": 347,
+        "totalTokens": 421,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 1,
+        "ms": 66.39,
+        "responseBytes": 9431,
+        "finalResponseBytes": 9431,
+        "requestTokens": 36,
+        "responseTokens": 3906,
+        "totalTokens": 3942,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 67.35,
+        "responseBytes": 13647,
+        "finalResponseBytes": 13245,
+        "requestTokens": 43,
+        "responseTokens": 171,
+        "totalTokens": 214,
+        "imageBytes": 9780,
+        "success": true,
+        "delivery": "inline-image",
+        "contentTypes": [
+          "text",
+          "image"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        ""
+      ]
+    },
+    {
+      "product": "playwright",
+      "run": 1,
+      "connectMs": 2121.48,
+      "firstArticleReadyMs": 2714.13,
+      "listToolsMs": 9.27,
+      "toolCount": 24,
+      "toolSchemaBytes": 18466,
+      "toolSchemaTokens": 3999,
+      "coreSessionTokens": 11627,
+      "article": {
+        "calls": 2,
+        "ms": 592.65,
+        "responseBytes": 19247,
+        "finalResponseBytes": 18820,
+        "requestTokens": 35,
+        "responseTokens": 4605,
+        "totalTokens": 4640,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 172,
+        "imageAltCount": 8,
+        "network": {
+          "requests": 10,
+          "bytes": 94950
+        }
+      },
+      "form": {
+        "calls": 5,
+        "ms": 685.04,
+        "responseBytes": 2307,
+        "finalResponseBytes": 813,
+        "requestTokens": 91,
+        "responseTokens": 770,
+        "totalTokens": 861,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 2,
+        "ms": 589.95,
+        "responseBytes": 5257,
+        "finalResponseBytes": 4961,
+        "requestTokens": 168,
+        "responseTokens": 1959,
+        "totalTokens": 2127,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 153.04,
+        "responseBytes": 22886,
+        "finalResponseBytes": 22593,
+        "requestTokens": 43,
+        "responseTokens": 272,
+        "totalTokens": 315,
+        "imageBytes": 16618,
+        "success": true,
+        "delivery": "inline-image",
+        "contentTypes": [
+          "text",
+          "image"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        ""
+      ]
+    },
+    {
+      "product": "playwright",
+      "run": 2,
+      "connectMs": 2464.68,
+      "firstArticleReadyMs": 3042.6,
+      "listToolsMs": 12.32,
+      "toolCount": 24,
+      "toolSchemaBytes": 18466,
+      "toolSchemaTokens": 3999,
+      "coreSessionTokens": 11627,
+      "article": {
+        "calls": 2,
+        "ms": 577.92,
+        "responseBytes": 19247,
+        "finalResponseBytes": 18820,
+        "requestTokens": 35,
+        "responseTokens": 4605,
+        "totalTokens": 4640,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 172,
+        "imageAltCount": 8,
+        "network": {
+          "requests": 10,
+          "bytes": 94950
+        }
+      },
+      "form": {
+        "calls": 5,
+        "ms": 673.36,
+        "responseBytes": 2307,
+        "finalResponseBytes": 813,
+        "requestTokens": 91,
+        "responseTokens": 770,
+        "totalTokens": 861,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 2,
+        "ms": 626.98,
+        "responseBytes": 5257,
+        "finalResponseBytes": 4961,
+        "requestTokens": 168,
+        "responseTokens": 1959,
+        "totalTokens": 2127,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 169.16,
+        "responseBytes": 22886,
+        "finalResponseBytes": 22593,
+        "requestTokens": 43,
+        "responseTokens": 272,
+        "totalTokens": 315,
+        "imageBytes": 16618,
+        "success": true,
+        "delivery": "inline-image",
+        "contentTypes": [
+          "text",
+          "image"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        ""
+      ]
+    },
+    {
+      "product": "playwright",
+      "run": 3,
+      "connectMs": 2212.74,
+      "firstArticleReadyMs": 2773.06,
+      "listToolsMs": 10,
+      "toolCount": 24,
+      "toolSchemaBytes": 18466,
+      "toolSchemaTokens": 3999,
+      "coreSessionTokens": 11627,
+      "article": {
+        "calls": 2,
+        "ms": 560.32,
+        "responseBytes": 19247,
+        "finalResponseBytes": 18820,
+        "requestTokens": 35,
+        "responseTokens": 4605,
+        "totalTokens": 4640,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 172,
+        "imageAltCount": 8,
+        "network": {
+          "requests": 10,
+          "bytes": 94950
+        }
+      },
+      "form": {
+        "calls": 5,
+        "ms": 682.52,
+        "responseBytes": 2307,
+        "finalResponseBytes": 813,
+        "requestTokens": 91,
+        "responseTokens": 770,
+        "totalTokens": 861,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 2,
+        "ms": 604.84,
+        "responseBytes": 5257,
+        "finalResponseBytes": 4961,
+        "requestTokens": 168,
+        "responseTokens": 1959,
+        "totalTokens": 2127,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 171.31,
+        "responseBytes": 22886,
+        "finalResponseBytes": 22593,
+        "requestTokens": 43,
+        "responseTokens": 272,
+        "totalTokens": 315,
+        "imageBytes": 16618,
+        "success": true,
+        "delivery": "inline-image",
+        "contentTypes": [
+          "text",
+          "image"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        ""
+      ]
+    },
+    {
+      "product": "playwright",
+      "run": 4,
+      "connectMs": 2113.33,
+      "firstArticleReadyMs": 2674.53,
+      "listToolsMs": 10.4,
+      "toolCount": 24,
+      "toolSchemaBytes": 18466,
+      "toolSchemaTokens": 3999,
+      "coreSessionTokens": 11627,
+      "article": {
+        "calls": 2,
+        "ms": 561.2,
+        "responseBytes": 19247,
+        "finalResponseBytes": 18820,
+        "requestTokens": 35,
+        "responseTokens": 4605,
+        "totalTokens": 4640,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 172,
+        "imageAltCount": 8,
+        "network": {
+          "requests": 10,
+          "bytes": 94950
+        }
+      },
+      "form": {
+        "calls": 5,
+        "ms": 687.4,
+        "responseBytes": 2307,
+        "finalResponseBytes": 813,
+        "requestTokens": 91,
+        "responseTokens": 770,
+        "totalTokens": 861,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 2,
+        "ms": 618.56,
+        "responseBytes": 5257,
+        "finalResponseBytes": 4961,
+        "requestTokens": 168,
+        "responseTokens": 1959,
+        "totalTokens": 2127,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 170.75,
+        "responseBytes": 22886,
+        "finalResponseBytes": 22593,
+        "requestTokens": 43,
+        "responseTokens": 272,
+        "totalTokens": 315,
+        "imageBytes": 16618,
+        "success": true,
+        "delivery": "inline-image",
+        "contentTypes": [
+          "text",
+          "image"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        ""
+      ]
+    },
+    {
+      "product": "playwright",
+      "run": 5,
+      "connectMs": 2096,
+      "firstArticleReadyMs": 2660.04,
+      "listToolsMs": 10.3,
+      "toolCount": 24,
+      "toolSchemaBytes": 18466,
+      "toolSchemaTokens": 3999,
+      "coreSessionTokens": 11627,
+      "article": {
+        "calls": 2,
+        "ms": 564.04,
+        "responseBytes": 19247,
+        "finalResponseBytes": 18820,
+        "requestTokens": 35,
+        "responseTokens": 4605,
+        "totalTokens": 4640,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 172,
+        "imageAltCount": 8,
+        "network": {
+          "requests": 10,
+          "bytes": 94950
+        }
+      },
+      "form": {
+        "calls": 5,
+        "ms": 684.58,
+        "responseBytes": 2307,
+        "finalResponseBytes": 813,
+        "requestTokens": 91,
+        "responseTokens": 770,
+        "totalTokens": 861,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 2,
+        "ms": 603.85,
+        "responseBytes": 5257,
+        "finalResponseBytes": 4961,
+        "requestTokens": 168,
+        "responseTokens": 1959,
+        "totalTokens": 2127,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 145.97,
+        "responseBytes": 22886,
+        "finalResponseBytes": 22593,
+        "requestTokens": 43,
+        "responseTokens": 272,
+        "totalTokens": 315,
+        "imageBytes": 16618,
+        "success": true,
+        "delivery": "inline-image",
+        "contentTypes": [
+          "text",
+          "image"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        ""
+      ]
+    },
+    {
+      "product": "chrome-slim",
+      "run": 1,
+      "connectMs": 2488.33,
+      "firstArticleReadyMs": 3072.5,
+      "listToolsMs": 4.97,
+      "toolCount": 3,
+      "toolSchemaBytes": 957,
+      "toolSchemaTokens": 221,
+      "coreSessionTokens": 4638,
+      "article": {
+        "calls": 2,
+        "ms": 584.17,
+        "responseBytes": 12720,
+        "finalResponseBytes": 12638,
+        "requestTokens": 37,
+        "responseTokens": 2460,
+        "totalTokens": 2497,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 0,
+        "imageAltCount": 0,
+        "network": {
+          "requests": 10,
+          "bytes": 94950
+        }
+      },
+      "form": {
+        "calls": 2,
+        "ms": 46.65,
+        "responseBytes": 265,
+        "finalResponseBytes": 187,
+        "requestTokens": 79,
+        "responseTokens": 77,
+        "totalTokens": 156,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 2,
+        "ms": 34.4,
+        "responseBytes": 3951,
+        "finalResponseBytes": 3870,
+        "requestTokens": 164,
+        "responseTokens": 1600,
+        "totalTokens": 1764,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 90.06,
+        "responseBytes": 201,
+        "finalResponseBytes": 121,
+        "requestTokens": 33,
+        "responseTokens": 69,
+        "totalTokens": 102,
+        "imageBytes": 0,
+        "success": true,
+        "delivery": "text-only",
+        "contentTypes": [
+          "text"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        "debug, and modify any data in the browser or DevTools.",
+        "Avoid sharing sensitive or personal information that you do not want to share with MCP clients.",
+        "[chrome-devtools-mcp] The connecting client did not negotiate the MCP roots capability. File-writing tools will be restricted to the OS temp directory. To restore the previous unrestricted behavior, start the server with --allow-unrestricted-paths."
+      ]
+    },
+    {
+      "product": "chrome-slim",
+      "run": 2,
+      "connectMs": 2287.57,
+      "firstArticleReadyMs": 2866.24,
+      "listToolsMs": 3.96,
+      "toolCount": 3,
+      "toolSchemaBytes": 957,
+      "toolSchemaTokens": 221,
+      "coreSessionTokens": 4638,
+      "article": {
+        "calls": 2,
+        "ms": 578.67,
+        "responseBytes": 12720,
+        "finalResponseBytes": 12638,
+        "requestTokens": 37,
+        "responseTokens": 2460,
+        "totalTokens": 2497,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 0,
+        "imageAltCount": 0,
+        "network": {
+          "requests": 10,
+          "bytes": 94950
+        }
+      },
+      "form": {
+        "calls": 2,
+        "ms": 53.37,
+        "responseBytes": 265,
+        "finalResponseBytes": 187,
+        "requestTokens": 79,
+        "responseTokens": 77,
+        "totalTokens": 156,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 2,
+        "ms": 38.02,
+        "responseBytes": 3951,
+        "finalResponseBytes": 3870,
+        "requestTokens": 164,
+        "responseTokens": 1600,
+        "totalTokens": 1764,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 88.38,
+        "responseBytes": 201,
+        "finalResponseBytes": 121,
+        "requestTokens": 33,
+        "responseTokens": 68,
+        "totalTokens": 101,
+        "imageBytes": 0,
+        "success": true,
+        "delivery": "text-only",
+        "contentTypes": [
+          "text"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        "debug, and modify any data in the browser or DevTools.",
+        "Avoid sharing sensitive or personal information that you do not want to share with MCP clients.",
+        "[chrome-devtools-mcp] The connecting client did not negotiate the MCP roots capability. File-writing tools will be restricted to the OS temp directory. To restore the previous unrestricted behavior, start the server with --allow-unrestricted-paths."
+      ]
+    },
+    {
+      "product": "chrome-slim",
+      "run": 3,
+      "connectMs": 2272.6,
+      "firstArticleReadyMs": 2903.44,
+      "listToolsMs": 4.43,
+      "toolCount": 3,
+      "toolSchemaBytes": 957,
+      "toolSchemaTokens": 221,
+      "coreSessionTokens": 4638,
+      "article": {
+        "calls": 2,
+        "ms": 630.84,
+        "responseBytes": 12720,
+        "finalResponseBytes": 12638,
+        "requestTokens": 37,
+        "responseTokens": 2460,
+        "totalTokens": 2497,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 0,
+        "imageAltCount": 0,
+        "network": {
+          "requests": 10,
+          "bytes": 94950
+        }
+      },
+      "form": {
+        "calls": 2,
+        "ms": 54.19,
+        "responseBytes": 265,
+        "finalResponseBytes": 187,
+        "requestTokens": 79,
+        "responseTokens": 77,
+        "totalTokens": 156,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 2,
+        "ms": 34.16,
+        "responseBytes": 3951,
+        "finalResponseBytes": 3870,
+        "requestTokens": 164,
+        "responseTokens": 1600,
+        "totalTokens": 1764,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 86.39,
+        "responseBytes": 201,
+        "finalResponseBytes": 121,
+        "requestTokens": 33,
+        "responseTokens": 68,
+        "totalTokens": 101,
+        "imageBytes": 0,
+        "success": true,
+        "delivery": "text-only",
+        "contentTypes": [
+          "text"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        "debug, and modify any data in the browser or DevTools.",
+        "Avoid sharing sensitive or personal information that you do not want to share with MCP clients.",
+        "[chrome-devtools-mcp] The connecting client did not negotiate the MCP roots capability. File-writing tools will be restricted to the OS temp directory. To restore the previous unrestricted behavior, start the server with --allow-unrestricted-paths."
+      ]
+    },
+    {
+      "product": "chrome-slim",
+      "run": 4,
+      "connectMs": 2413.31,
+      "firstArticleReadyMs": 3004.94,
+      "listToolsMs": 4.94,
+      "toolCount": 3,
+      "toolSchemaBytes": 957,
+      "toolSchemaTokens": 221,
+      "coreSessionTokens": 4638,
+      "article": {
+        "calls": 2,
+        "ms": 591.63,
+        "responseBytes": 12720,
+        "finalResponseBytes": 12638,
+        "requestTokens": 37,
+        "responseTokens": 2460,
+        "totalTokens": 2497,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 0,
+        "imageAltCount": 0,
+        "network": {
+          "requests": 10,
+          "bytes": 94950
+        }
+      },
+      "form": {
+        "calls": 2,
+        "ms": 51.13,
+        "responseBytes": 265,
+        "finalResponseBytes": 187,
+        "requestTokens": 79,
+        "responseTokens": 77,
+        "totalTokens": 156,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 2,
+        "ms": 35.2,
+        "responseBytes": 3951,
+        "finalResponseBytes": 3870,
+        "requestTokens": 164,
+        "responseTokens": 1600,
+        "totalTokens": 1764,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 93.02,
+        "responseBytes": 201,
+        "finalResponseBytes": 121,
+        "requestTokens": 33,
+        "responseTokens": 69,
+        "totalTokens": 102,
+        "imageBytes": 0,
+        "success": true,
+        "delivery": "text-only",
+        "contentTypes": [
+          "text"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        "debug, and modify any data in the browser or DevTools.",
+        "Avoid sharing sensitive or personal information that you do not want to share with MCP clients.",
+        "[chrome-devtools-mcp] The connecting client did not negotiate the MCP roots capability. File-writing tools will be restricted to the OS temp directory. To restore the previous unrestricted behavior, start the server with --allow-unrestricted-paths."
+      ]
+    },
+    {
+      "product": "chrome-slim",
+      "run": 5,
+      "connectMs": 2439.05,
+      "firstArticleReadyMs": 3016.63,
+      "listToolsMs": 5.72,
+      "toolCount": 3,
+      "toolSchemaBytes": 957,
+      "toolSchemaTokens": 221,
+      "coreSessionTokens": 4638,
+      "article": {
+        "calls": 2,
+        "ms": 577.58,
+        "responseBytes": 12720,
+        "finalResponseBytes": 12638,
+        "requestTokens": 37,
+        "responseTokens": 2460,
+        "totalTokens": 2497,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 0,
+        "imageAltCount": 0,
+        "network": {
+          "requests": 10,
+          "bytes": 94950
+        }
+      },
+      "form": {
+        "calls": 2,
+        "ms": 47.21,
+        "responseBytes": 265,
+        "finalResponseBytes": 187,
+        "requestTokens": 79,
+        "responseTokens": 77,
+        "totalTokens": 156,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 2,
+        "ms": 33.92,
+        "responseBytes": 3951,
+        "finalResponseBytes": 3870,
+        "requestTokens": 164,
+        "responseTokens": 1600,
+        "totalTokens": 1764,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 97.44,
+        "responseBytes": 201,
+        "finalResponseBytes": 121,
+        "requestTokens": 33,
+        "responseTokens": 68,
+        "totalTokens": 101,
+        "imageBytes": 0,
+        "success": true,
+        "delivery": "text-only",
+        "contentTypes": [
+          "text"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        "debug, and modify any data in the browser or DevTools.",
+        "Avoid sharing sensitive or personal information that you do not want to share with MCP clients.",
+        "[chrome-devtools-mcp] The connecting client did not negotiate the MCP roots capability. File-writing tools will be restricted to the OS temp directory. To restore the previous unrestricted behavior, start the server with --allow-unrestricted-paths."
+      ]
+    },
+    {
+      "product": "chrome-devtools",
+      "run": 1,
+      "connectMs": 2435.47,
+      "firstArticleReadyMs": 3132.91,
+      "listToolsMs": 11.45,
+      "toolCount": 29,
+      "toolSchemaBytes": 22621,
+      "toolSchemaTokens": 4974,
+      "coreSessionTokens": 11596,
+      "article": {
+        "calls": 2,
+        "ms": 697.44,
+        "responseBytes": 18423,
+        "finalResponseBytes": 18243,
+        "requestTokens": 38,
+        "responseTokens": 4350,
+        "totalTokens": 4388,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 143,
+        "imageAltCount": 8,
+        "network": {
+          "requests": 10,
+          "bytes": 94950
+        }
+      },
+      "form": {
+        "calls": 4,
+        "ms": 612.66,
+        "responseBytes": 2877,
+        "finalResponseBytes": 944,
+        "requestTokens": 81,
+        "responseTokens": 833,
+        "totalTokens": 914,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 2,
+        "ms": 377.17,
+        "responseBytes": 3369,
+        "finalResponseBytes": 3194,
+        "requestTokens": 170,
+        "responseTokens": 1150,
+        "totalTokens": 1320,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 223.9,
+        "responseBytes": 52266,
+        "finalResponseBytes": 52094,
+        "requestTokens": 41,
+        "responseTokens": 103,
+        "totalTokens": 144,
+        "imageBytes": 38966,
+        "success": true,
+        "delivery": "inline-image",
+        "contentTypes": [
+          "text",
+          "image"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        "debug, and modify any data in the browser or DevTools.",
+        "Avoid sharing sensitive or personal information that you do not want to share with MCP clients.",
+        "[chrome-devtools-mcp] The connecting client did not negotiate the MCP roots capability. File-writing tools will be restricted to the OS temp directory. To restore the previous unrestricted behavior, start the server with --allow-unrestricted-paths."
+      ]
+    },
+    {
+      "product": "chrome-devtools",
+      "run": 2,
+      "connectMs": 2289.57,
+      "firstArticleReadyMs": 3013.55,
+      "listToolsMs": 9.11,
+      "toolCount": 29,
+      "toolSchemaBytes": 22621,
+      "toolSchemaTokens": 4974,
+      "coreSessionTokens": 11596,
+      "article": {
+        "calls": 2,
+        "ms": 723.98,
+        "responseBytes": 18423,
+        "finalResponseBytes": 18243,
+        "requestTokens": 38,
+        "responseTokens": 4350,
+        "totalTokens": 4388,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 143,
+        "imageAltCount": 8,
+        "network": {
+          "requests": 10,
+          "bytes": 94950
+        }
+      },
+      "form": {
+        "calls": 4,
+        "ms": 610.38,
+        "responseBytes": 2877,
+        "finalResponseBytes": 944,
+        "requestTokens": 81,
+        "responseTokens": 833,
+        "totalTokens": 914,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 2,
+        "ms": 379.13,
+        "responseBytes": 3369,
+        "finalResponseBytes": 3194,
+        "requestTokens": 170,
+        "responseTokens": 1150,
+        "totalTokens": 1320,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 219.62,
+        "responseBytes": 52266,
+        "finalResponseBytes": 52094,
+        "requestTokens": 41,
+        "responseTokens": 103,
+        "totalTokens": 144,
+        "imageBytes": 38966,
+        "success": true,
+        "delivery": "inline-image",
+        "contentTypes": [
+          "text",
+          "image"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        "debug, and modify any data in the browser or DevTools.",
+        "Avoid sharing sensitive or personal information that you do not want to share with MCP clients.",
+        "[chrome-devtools-mcp] The connecting client did not negotiate the MCP roots capability. File-writing tools will be restricted to the OS temp directory. To restore the previous unrestricted behavior, start the server with --allow-unrestricted-paths."
+      ]
+    },
+    {
+      "product": "chrome-devtools",
+      "run": 3,
+      "connectMs": 2405.42,
+      "firstArticleReadyMs": 3150.79,
+      "listToolsMs": 9.01,
+      "toolCount": 29,
+      "toolSchemaBytes": 22621,
+      "toolSchemaTokens": 4974,
+      "coreSessionTokens": 11596,
+      "article": {
+        "calls": 2,
+        "ms": 745.37,
+        "responseBytes": 18423,
+        "finalResponseBytes": 18243,
+        "requestTokens": 38,
+        "responseTokens": 4350,
+        "totalTokens": 4388,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 143,
+        "imageAltCount": 8,
+        "network": {
+          "requests": 10,
+          "bytes": 94950
+        }
+      },
+      "form": {
+        "calls": 4,
+        "ms": 613.81,
+        "responseBytes": 2877,
+        "finalResponseBytes": 944,
+        "requestTokens": 81,
+        "responseTokens": 833,
+        "totalTokens": 914,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 2,
+        "ms": 379.61,
+        "responseBytes": 3369,
+        "finalResponseBytes": 3194,
+        "requestTokens": 170,
+        "responseTokens": 1150,
+        "totalTokens": 1320,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 228.1,
+        "responseBytes": 52266,
+        "finalResponseBytes": 52094,
+        "requestTokens": 41,
+        "responseTokens": 103,
+        "totalTokens": 144,
+        "imageBytes": 38966,
+        "success": true,
+        "delivery": "inline-image",
+        "contentTypes": [
+          "text",
+          "image"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        "debug, and modify any data in the browser or DevTools.",
+        "Avoid sharing sensitive or personal information that you do not want to share with MCP clients.",
+        "[chrome-devtools-mcp] The connecting client did not negotiate the MCP roots capability. File-writing tools will be restricted to the OS temp directory. To restore the previous unrestricted behavior, start the server with --allow-unrestricted-paths."
+      ]
+    },
+    {
+      "product": "chrome-devtools",
+      "run": 4,
+      "connectMs": 2377.98,
+      "firstArticleReadyMs": 3130.15,
+      "listToolsMs": 9.93,
+      "toolCount": 29,
+      "toolSchemaBytes": 22621,
+      "toolSchemaTokens": 4974,
+      "coreSessionTokens": 11596,
+      "article": {
+        "calls": 2,
+        "ms": 752.17,
+        "responseBytes": 18423,
+        "finalResponseBytes": 18243,
+        "requestTokens": 38,
+        "responseTokens": 4350,
+        "totalTokens": 4388,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 143,
+        "imageAltCount": 8,
+        "network": {
+          "requests": 10,
+          "bytes": 94950
+        }
+      },
+      "form": {
+        "calls": 4,
+        "ms": 613.48,
+        "responseBytes": 2877,
+        "finalResponseBytes": 944,
+        "requestTokens": 81,
+        "responseTokens": 833,
+        "totalTokens": 914,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 2,
+        "ms": 363.4,
+        "responseBytes": 3369,
+        "finalResponseBytes": 3194,
+        "requestTokens": 170,
+        "responseTokens": 1150,
+        "totalTokens": 1320,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 238.88,
+        "responseBytes": 52266,
+        "finalResponseBytes": 52094,
+        "requestTokens": 41,
+        "responseTokens": 103,
+        "totalTokens": 144,
+        "imageBytes": 38966,
+        "success": true,
+        "delivery": "inline-image",
+        "contentTypes": [
+          "text",
+          "image"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        "debug, and modify any data in the browser or DevTools.",
+        "Avoid sharing sensitive or personal information that you do not want to share with MCP clients.",
+        "[chrome-devtools-mcp] The connecting client did not negotiate the MCP roots capability. File-writing tools will be restricted to the OS temp directory. To restore the previous unrestricted behavior, start the server with --allow-unrestricted-paths."
+      ]
+    },
+    {
+      "product": "chrome-devtools",
+      "run": 5,
+      "connectMs": 2419.87,
+      "firstArticleReadyMs": 3186.72,
+      "listToolsMs": 9.05,
+      "toolCount": 29,
+      "toolSchemaBytes": 22621,
+      "toolSchemaTokens": 4974,
+      "coreSessionTokens": 11596,
+      "article": {
+        "calls": 2,
+        "ms": 766.85,
+        "responseBytes": 18423,
+        "finalResponseBytes": 18243,
+        "requestTokens": 38,
+        "responseTokens": 4350,
+        "totalTokens": 4388,
+        "imageBytes": 0,
+        "success": true,
+        "sectionCount": 48,
+        "actionRefCount": 143,
+        "imageAltCount": 8,
+        "network": {
+          "requests": 10,
+          "bytes": 94950
+        }
+      },
+      "form": {
+        "calls": 4,
+        "ms": 609.59,
+        "responseBytes": 2877,
+        "finalResponseBytes": 944,
+        "requestTokens": 81,
+        "responseTokens": 833,
+        "totalTokens": 914,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1038
+        }
+      },
+      "visual": {
+        "calls": 2,
+        "ms": 362.95,
+        "responseBytes": 3369,
+        "finalResponseBytes": 3194,
+        "requestTokens": 170,
+        "responseTokens": 1150,
+        "totalTokens": 1320,
+        "imageBytes": 0,
+        "success": true,
+        "network": {
+          "requests": 1,
+          "bytes": 1371
+        }
+      },
+      "image": {
+        "calls": 2,
+        "ms": 222.58,
+        "responseBytes": 52266,
+        "finalResponseBytes": 52094,
+        "requestTokens": 41,
+        "responseTokens": 103,
+        "totalTokens": 144,
+        "imageBytes": 38966,
+        "success": true,
+        "delivery": "inline-image",
+        "contentTypes": [
+          "text",
+          "image"
+        ],
+        "network": {
+          "requests": 2,
+          "bytes": 10213
+        }
+      },
+      "stderrTail": [
+        "debug, and modify any data in the browser or DevTools.",
+        "Avoid sharing sensitive or personal information that you do not want to share with MCP clients.",
+        "[chrome-devtools-mcp] The connecting client did not negotiate the MCP roots capability. File-writing tools will be restricted to the OS temp directory. To restore the previous unrestricted behavior, start the server with --allow-unrestricted-paths."
+      ]
+    }
+  ],
+  "summary": {
+    "haden": {
+      "connectMs": 714.43,
+      "firstArticleReadyMs": 1043.64,
+      "listToolsMs": 8.64,
+      "toolCount": 5,
+      "toolSchemaBytes": 2951,
+      "toolSchemaTokens": 727,
+      "coreSessionTokens": 7822,
+      "article.ms": 329.21,
+      "article.responseBytes": 13786,
+      "article.requestTokens": 35,
+      "article.responseTokens": 2697,
+      "article.totalTokens": 2732,
+      "article.network.requests": 1,
+      "article.network.bytes": 16701,
+      "article.sectionCount": 48,
+      "article.actionRefCount": 15,
+      "article.imageAltCount": 8,
+      "form.calls": 3,
+      "form.ms": 332.44,
+      "form.responseBytes": 1206,
+      "form.requestTokens": 74,
+      "form.responseTokens": 347,
+      "form.totalTokens": 421,
+      "visual.calls": 1,
+      "visual.ms": 34.03,
+      "visual.responseBytes": 9431,
+      "visual.requestTokens": 36,
+      "visual.responseTokens": 3906,
+      "visual.totalTokens": 3942,
+      "image.ms": 52.91,
+      "image.responseBytes": 13647,
+      "image.imageBytes": 9780,
+      "image.delivery": "inline-image",
+      "allScenariosSucceeded": true
+    },
+    "playwright": {
+      "connectMs": 2121.48,
+      "firstArticleReadyMs": 2714.13,
+      "listToolsMs": 10.3,
+      "toolCount": 24,
+      "toolSchemaBytes": 18466,
+      "toolSchemaTokens": 3999,
+      "coreSessionTokens": 11627,
+      "article.ms": 564.04,
+      "article.responseBytes": 19247,
+      "article.requestTokens": 35,
+      "article.responseTokens": 4605,
+      "article.totalTokens": 4640,
+      "article.network.requests": 10,
+      "article.network.bytes": 94950,
+      "article.sectionCount": 48,
+      "article.actionRefCount": 172,
+      "article.imageAltCount": 8,
+      "form.calls": 5,
+      "form.ms": 684.58,
+      "form.responseBytes": 2307,
+      "form.requestTokens": 91,
+      "form.responseTokens": 770,
+      "form.totalTokens": 861,
+      "visual.calls": 2,
+      "visual.ms": 604.84,
+      "visual.responseBytes": 5257,
+      "visual.requestTokens": 168,
+      "visual.responseTokens": 1959,
+      "visual.totalTokens": 2127,
+      "image.ms": 169.16,
+      "image.responseBytes": 22886,
+      "image.imageBytes": 16618,
+      "image.delivery": "inline-image",
+      "allScenariosSucceeded": true
+    },
+    "chrome-slim": {
+      "connectMs": 2413.31,
+      "firstArticleReadyMs": 3004.94,
+      "listToolsMs": 4.94,
+      "toolCount": 3,
+      "toolSchemaBytes": 957,
+      "toolSchemaTokens": 221,
+      "coreSessionTokens": 4638,
+      "article.ms": 584.17,
+      "article.responseBytes": 12720,
+      "article.requestTokens": 37,
+      "article.responseTokens": 2460,
+      "article.totalTokens": 2497,
+      "article.network.requests": 10,
+      "article.network.bytes": 94950,
+      "article.sectionCount": 48,
+      "article.actionRefCount": 0,
+      "article.imageAltCount": 0,
+      "form.calls": 2,
+      "form.ms": 51.13,
+      "form.responseBytes": 265,
+      "form.requestTokens": 79,
+      "form.responseTokens": 77,
+      "form.totalTokens": 156,
+      "visual.calls": 2,
+      "visual.ms": 34.4,
+      "visual.responseBytes": 3951,
+      "visual.requestTokens": 164,
+      "visual.responseTokens": 1600,
+      "visual.totalTokens": 1764,
+      "image.ms": 90.06,
+      "image.responseBytes": 201,
+      "image.imageBytes": 0,
+      "image.delivery": "text-only",
+      "allScenariosSucceeded": true
+    },
+    "chrome-devtools": {
+      "connectMs": 2405.42,
+      "firstArticleReadyMs": 3132.91,
+      "listToolsMs": 9.11,
+      "toolCount": 29,
+      "toolSchemaBytes": 22621,
+      "toolSchemaTokens": 4974,
+      "coreSessionTokens": 11596,
+      "article.ms": 745.37,
+      "article.responseBytes": 18423,
+      "article.requestTokens": 38,
+      "article.responseTokens": 4350,
+      "article.totalTokens": 4388,
+      "article.network.requests": 10,
+      "article.network.bytes": 94950,
+      "article.sectionCount": 48,
+      "article.actionRefCount": 143,
+      "article.imageAltCount": 8,
+      "form.calls": 4,
+      "form.ms": 612.66,
+      "form.responseBytes": 2877,
+      "form.requestTokens": 81,
+      "form.responseTokens": 833,
+      "form.totalTokens": 914,
+      "visual.calls": 2,
+      "visual.ms": 377.17,
+      "visual.responseBytes": 3369,
+      "visual.requestTokens": 170,
+      "visual.responseTokens": 1150,
+      "visual.totalTokens": 1320,
+      "image.ms": 223.9,
+      "image.responseBytes": 52266,
+      "image.imageBytes": 38966,
+      "image.delivery": "inline-image",
+      "allScenariosSucceeded": true
+    }
+  }
+}
